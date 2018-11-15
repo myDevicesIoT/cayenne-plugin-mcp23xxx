@@ -11,7 +11,7 @@ A plugin allowing the [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne
 * [Git](https://git-scm.com/).
 
 ## Getting Started
-1. Installation
+### 1. Installation
 
    From the command line run the following commands to install this plugin.
    ```
@@ -19,7 +19,7 @@ A plugin allowing the [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne
    sudo git clone https://github.com/myDevicesIoT/cayenne-plugin-mcp23xxx.git
    ```
 
-2. Modifying the plugin
+### 2. Modifying the plugin
 
    Specify the device you are using by setting the `class` value under the `MCP` section in the `cayenne-mcp23xxx.plugin` file.
    By default this is set to `MCP23017` but it can be set to use any of the classes in the `cayenne-mcp23xxx` module.
@@ -30,7 +30,7 @@ A plugin allowing the [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne
    By default the plugin alternates between input and output channels. To specify different functions for specific channels you
    can modify the `init_args` for that section to specify the `function` you want to use.
 
-3. Restarting the agent
+### 3. Restarting the agent
 
    Restart the agent so it can load the plugin.
    ```
