@@ -4,7 +4,7 @@ A plugin allowing the [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne
 ## Requirements
 ### Hardware
 * [Rasberry Pi](https://www.raspberrypi.org).
-* An MCP23XXX extension, e.g. [MCP23017]https://www.adafruit.com/product/732) or a [PiFace Digital](http://www.piface.org.uk/products/piface_digital/).
+* An MCP23XXX extension, e.g. [MCP23017](https://www.adafruit.com/product/732), or a [PiFace Digital](http://www.piface.org.uk/products/piface_digital/).
 
 ### Software
 * [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne-Agent). This can be installed from the [Cayenne Dashboard](https://cayenne.mydevices.com).
@@ -12,6 +12,7 @@ A plugin allowing the [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne
 
 ## Getting Started
 1. Installation
+
    From the command line run the following commands to install this plugin.
    ```
    cd /etc/myDevices/plugins
@@ -19,6 +20,7 @@ A plugin allowing the [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne
    ```
 
 2. Modifying the plugin
+
    Specify the device you are using by setting the `class` value under the `MCP` section in the `cayenne-mcp23xxx.plugin` file.
    By default this is set to `MCP23017` but it can be set to use any of the classes in the `cayenne-mcp23xxx` module.
    
@@ -29,6 +31,7 @@ A plugin allowing the [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne
    can modify the `init_args` for that section to specify the `function` you want to use.
 
 3. Restarting the agent
+
    Restart the agent so it can load the plugin.
    ```
    sudo service myDevices restart
