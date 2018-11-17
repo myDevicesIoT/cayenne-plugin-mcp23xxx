@@ -1,13 +1,10 @@
 """
 This module provides classes for interfacing with MCP23XXX digital I/O extensions.
 """
-import os
-import time
-
 from myDevices.devices.i2c import I2C
 from myDevices.devices.spi import SPI
 from myDevices.devices.digital import GPIOPort
-from myDevices.plugins.digital import DigitalIO
+from myDevices.plugins.digital import DigitalInput, DigitalOutput
 
 
 class MCP23XXX(GPIOPort):

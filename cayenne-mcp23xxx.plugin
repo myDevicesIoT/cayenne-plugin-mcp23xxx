@@ -1,7 +1,7 @@
 [MCP]
 enabled=true
 module=cayenne-mcp23xxx
-class=MCPTest
+class=MCP23017
 read=digitalRead
 write=digitalWrite
 set_function=setFunctionString
@@ -10,8 +10,8 @@ set_function=setFunctionString
 enabled=true
 channel=0
 module=cayenne-mcp23xxx
-class=DigitalIO
-init_args={"gpio":"cayenne-mcp23xxx:MCP", "function":"in"}
+class=DigitalInput
+init_args={"plugin_id":"cayenne-mcp23xxx:MCP"}
 read=read
 read_args={"channel":$channel}
 write=write
@@ -21,7 +21,7 @@ write_args={"channel":$channel}
 enabled=true
 inherit=MCP_CH0
 channel=1
-init_args={"gpio":"cayenne-mcp23xxx:MCP", "function":"out"}
+class=DigitalOutput
 
 [MCP_CH2]
 enabled=true
