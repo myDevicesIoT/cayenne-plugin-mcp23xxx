@@ -65,7 +65,7 @@ class MCP23XXX(GPIOPort):
         return self.IN if (d & mask) == mask else self.OUT
         
     def __setFunction__(self, channel, value):
-        """Returns the IN/OUT function for the specified channel. Overrides GPIOPort.__setFunction__."""
+        """Sets the IN/OUT function for the specified channel. Overrides GPIOPort.__setFunction__."""
         if not value in [self.IN, self.OUT]:
             raise ValueError("Requested function not supported")
 

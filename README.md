@@ -28,7 +28,7 @@ A plugin allowing the [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne
    dashboard you can disable any of the individual input sections in `cayenne-mcp23xxx.plugin`.
 
    By default the plugin alternates between input and output channels. To specify different functions for specific channels you
-   can modify the `init_args` for that section to specify the `function` you want to use.
+   can modify the `class` for that section to specify `DigitalInput` or `DigitalOutput`.
 
 ### 3. Restarting the agent
 
