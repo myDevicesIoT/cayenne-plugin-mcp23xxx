@@ -1,6 +1,6 @@
 [MCP]
 enabled=true
-module=cayenne-mcp23xxx
+module=cayenne_mcp23xxx
 class=MCP23017
 read=digitalRead
 write=digitalWrite
@@ -9,9 +9,9 @@ set_function=setFunctionString
 [MCP_CH0]
 enabled=true
 channel=0
-module=cayenne-mcp23xxx
+module=cayenne_mcp23xxx
 class=DigitalInput
-init_args={"plugin_id":"cayenne-mcp23xxx:MCP"}
+init_args={"plugin_id":"cayenne_mcp23xxx:MCP"}
 read=read
 read_args={"channel":$channel}
 write=write

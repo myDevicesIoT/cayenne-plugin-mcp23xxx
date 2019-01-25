@@ -21,11 +21,11 @@ A plugin allowing the [Cayenne Pi Agent](https://github.com/myDevicesIoT/Cayenne
 
 ### 2. Modifying the plugin
 
-   Specify the device you are using by setting the `class` value under the `MCP` section in the `cayenne-mcp23xxx.plugin` file.
-   By default this is set to `MCP23017` but it can be set to use any of the classes in the `cayenne-mcp23xxx` module.
+   Specify the device you are using by setting the `class` value under the `MCP` section in the `cayenne_mcp23xxx.plugin` file.
+   By default this is set to `MCP23017` but it can be set to use any of the classes in the `cayenne_mcp23xxx` module.
    
    If your device has fewer channels than the `MCP23017` or you do not want the raw channel values to be displayed in the Cayenne 
-   dashboard you can disable any of the individual input sections in `cayenne-mcp23xxx.plugin`.
+   dashboard you can disable any of the individual input sections in `cayenne_mcp23xxx.plugin`.
 
    By default the plugin alternates between input and output channels. To specify different functions for specific channels you
    can modify the `class` for that section to specify `DigitalInput` or `DigitalOutput`.
